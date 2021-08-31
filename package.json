@@ -16,11 +16,16 @@
     "@angular/common": "~12.1.1",
     "@angular/compiler": "~12.1.1",
     "@angular/core": "~12.1.1",
+    "@angular/fire": "^7.0.2",
     "@angular/forms": "~12.1.1",
     "@angular/platform-browser": "~12.1.1",
     "@angular/platform-browser-dynamic": "~12.1.1",
     "@angular/router": "~12.1.1",
+    "@ionic-native/camera": "^5.36.0",
+    "@ionic-native/core": "^5.36.0",
+    "@ionic-native/social-sharing": "^5.36.0",
     "@ionic/angular": "^5.5.2",
+    "firebase": "^9.0.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
@@ -41,7 +46,9 @@
     "@types/node": "^12.11.1",
     "@typescript-eslint/eslint-plugin": "4.16.1",
     "@typescript-eslint/parser": "4.16.1",
-    "eslint": "^7.6.0",
+    "cordova-plugin-camera": "^6.0.0",
+    "cordova-plugin-x-socialsharing": "^6.0.3",
+    "eslint": "^7.32.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
     "eslint-plugin-prefer-arrow": "1.2.2",
@@ -57,5 +64,11 @@
     "ts-node": "~8.3.0",
     "typescript": "~4.2.4"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-camera": {},
+      "cordova-plugin-x-socialsharing": {}
+    }
+  }
 }
